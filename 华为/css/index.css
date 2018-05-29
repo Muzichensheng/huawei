@@ -1,0 +1,196 @@
+@charset 'UTF-8';
+body{
+	min-width: 1200px;
+	font:12px/1.5 'Microsoft YaHei';
+	color: #333;
+	}
+.top-banner{
+	min-width: 1200px;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	z-index: 500;
+	}
+/* 顶部高度设置 */
+.layout{
+	width: 1200px;
+	margin: 0 auto;
+	}
+/* 内容位置 */
+a{
+	color: #a4a4a4;
+	}
+a:hover{
+	color: #ca151d;
+	}
+/* 超链接字体颜色 */
+.top-banner .layout ul li{
+	float: left;
+	padding:0 8px;
+	position: relative;
+	border:1px solid #fff;
+	z-index: 400;
+	}
+/* 内容横排 间距 定位目标 */
+.top-banner .layout ul li:before{
+	content:'';
+	display:block;
+	height: 10px;
+	width: 1px;
+	position: absolute;
+	top:9px;
+	left: -1px;
+	background-color: #e4e4e4;
+}
+/* 内容分隔线 */
+.top-banner .layout ul li:first-child:before{
+	display:none;
+	}
+/* 取消第一个分割线 */
+.top-banner .layout ul li.signin:before{
+	display:none;
+	}
+/* 去除多余分割线 */
+.top-banner .layout ul li.ext:after{
+	content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #999;
+    position: absolute;
+    top: 11px;
+    right: 4px;
+	}
+/* 三角形 */
+.top-banner .layout ul li.ext:hover:after{
+	content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 6px solid #999;
+	border-top:none;
+    position: absolute;
+    top: 11px;
+    right: 4px;
+	}
+.layout ul li.ext{
+	padding: 0;
+	border:0;
+	}
+.box-sha{
+	padding:0 18px 0 8px;
+	border:1px solid #fff;
+	position: relative;
+	z-index: 610;
+	}
+/* 三角位置 */
+.layout ul li.ext:hover .box-sha{
+	box-shadow:0 -4px 6px 0 rgba(121,121,121,0.26);
+	border:1px solid #ebebeb;
+	border-bottom: 3px solid #fff;
+	}
+/* 更多精彩 阴影效果 */
+
+.top-banner .layout ul li .dropdown{
+	width: 144px;
+	padding: 9px 9px 10px  9px;	
+	text-align: center;
+	line-height: 32px;
+	box-shadow:0 2px 6px 0 rgba(121,121,121,0.26);
+	position: absolute;
+	z-index: 510;
+	top:33px;
+	right: 0;
+	padding-bottom: 5px;
+	border:1px solid #ebebeb;
+	background-color: rgb(255,255,255);
+	display: none;
+	}
+.top-banner .layout ul li .ewm{
+	border-top:1px solid #eaeaea;
+	padding-top: 22px;
+	} 
+/* 下拉栏内容 */
+.layout ul li.ext:hover .dropdown{
+	display: block;
+	}
+/* 下拉触发 */
+.layout .shop-cart:before{
+	content:'';
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin-left: 5px;
+	padding-right: 10px;
+	background: url('https://res8.vmallres.com/20180504/images/echannel/icon/icon-header.png?20170620') no-repeat;
+	vertical-align:sub;
+	}
+/* 购物车图标 */
+.top-banner .layout ul li.shop-car{
+	padding: 0;
+	border:none;
+	}
+.shop{
+	border:1px solid #fff;
+	border-left:1px solid transparent;
+	padding: 0 8px;
+	position: relative;
+	z-index: 610;
+	}
+.shop-car:hover .shop{
+	box-shadow:0 -4px 6px 0 rgba(121,121,121,0.26);
+	border:1px solid #ebebeb;
+	border-bottom: 3px solid #fff;
+	}
+.shopcar-content{
+	padding: 50px 0 50px;
+	width: 460px;
+	position: absolute;
+	top: 31px;
+	right: 0;
+	text-align: center;
+	color: #a4a4a4;
+	box-shadow:0 6px 6px 0 rgba(121,121,121,0.26);
+	border:1px solid #ebebeb;
+	z-index: 510;
+	background-color: rgb(255,255,255);
+	display: none;
+	}
+.shopcar-content .iconfont{
+	font-size:100px;
+	border-radius:50%;
+	line-height: 150%;
+	}
+.shop-car:hover .shopcar-content{
+	display: block;
+	}
+.top-hidden{
+	height: 90px;
+	}
+.top-hidden .layout{
+	overflow:visible;
+	height: 90px;
+	position: relative;
+	}
+.top-hidden a{
+	display: block;
+	width: 1920px;
+	height: 100%;
+	position: relative;
+	left: 50%;
+	margin-left: -960px;
+	}
+.top-hidden .close{
+	width: 24px;
+	height: 24px;
+	background:transparent url('../images/header/icon1.png') no-repeat 0 -385px; 
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: #fff;
+	cursor:pointer;
+	}

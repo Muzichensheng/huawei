@@ -1,0 +1,103 @@
+@charset "UTF-8";
+.foot-container{
+	background-color: rgb(240,240,240);
+	width: 100%;
+	}
+.foot-container .layout div {
+	border-top:1px solid #eee ;
+	}
+.foot-container .slogan ul{
+	margin: 46px 0;
+	}
+.foot-container .slogan ul li{
+	width: 300px;
+	}
+.foot-container .slogan ul li a{
+	font-size: 18px;
+	line-height: 47px;
+	color: #3a3a3a;
+	}
+.foot-container .slogan ul li i{
+	display: inline-block;
+	vertical-align: middle;
+	width: 47px;
+	height: 47px;
+	margin-right: 16px;
+	}
+.foot-container .slogan ul li i.a{
+	background: url('../images/content/01 login and icon/3.png') 0 -151px
+	 no-repeat;
+	}
+.foot-container .slogan ul li i.b{
+	background: url('../images/content/01 login and icon/3.png') -94px -151px
+	 no-repeat;
+	}
+.foot-container .slogan ul li i.c{
+	background: url('../images/content/01 login and icon/3.png')-141px -151px
+	 no-repeat;
+	}
+.foot-container .slogan ul li i.d{
+	background: url('../images/content/01 login and icon/3.png') -47px -151px
+	 no-repeat;
+	}
+.foot-container .service{
+	padding: 20px 0;
+	}
+.foot-container .service li{
+	width: 157px;
+	float:left;
+	}
+.foot-container .service dt{
+	font-size: 16px;
+	margin: 8px 0;
+	position: relative;
+	}
+.foot-container .service dd{
+	margin-bottom: 5px;
+	}
+.foot-container .service dt:before{
+	content:'';
+	width: 22px;
+	height: 2px;
+	background-color: #a8a8a8;
+	position: absolute;
+	top: -15px;
+	left: 0;
+	}
+.foot-container .service dl.call dt h3{
+	font-weight: normal;
+	}
+.foot-container .service dl.call dd a{
+	display: block;
+	color: #ca151d;
+	text-align: center;
+	background-color: #fff;
+	width: 170px;
+	height: 37px;
+	font-size: 14px;
+	line-height: 41px;
+	margin-top: 10px;
+	}
+.foot-container .service dl.call dd a i{
+	display: inline-block;
+	width: 22px;
+	height: 18px;
+	background: url('../images/content/01 login and icon/3.png') -101px -23px no-repeat;
+	}
+.final{
+	background-color: rgb(230,230,230);
+	}
+.final .layout{
+	padding: 26px 0 34px ;
+	height: 60px;
+	color: #a4a4a4;
+	}
+.final .layout .logo{
+	width: 79px;
+	height: 16px;
+	margin: 21.5px 30px 0 0;
+	background: url('../images/content/01 login and icon/3.png') -102px -45px no-repeat;
+	}
+.final .layout .sign{
+	margin: 11px 0;
+	}
